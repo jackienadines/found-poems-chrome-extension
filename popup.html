@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body {
+                width: 300px;
+                padding: 15px;
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+            }
+            h2 {
+                margin-top: 0;
+                color: #333;
+            }
+            p {
+                font-size: 14px;
+                line-height: 1.5;
+                color: #666;
+            }
+            button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+                width: 100%;
+                margin-top: 10px;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Found Poems</h2>
+        <p>Click on any word to redact it. Click again to un-redact.</p>
+        <button id="clearButton">Clear All Redactions</button>
+        <script src="popup.js"></script>
+    </body>
+</html>

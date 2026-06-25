@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Found Poems",
+  "version": "1.0",
+  "description": "Redact words on any webpage to create found poems",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Found Poems"
+  }
+}
