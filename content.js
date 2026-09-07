@@ -32,9 +32,10 @@ function redact() {
 
   const selection = selectionCheck.getRangeAt(0);
   const redaction = document.createElement("span");
-  selection.surroundContents(redaction);
+  const redactionContent = selection.extractContents();
+  redaction.appendChild(redactionContent);
   redaction.className = "redacted-text";
-
+  selection.insertNode(redaction);
 }
 
 document.addEventListener('mouseup', redact);
