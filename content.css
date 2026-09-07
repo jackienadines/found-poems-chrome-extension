@@ -1,0 +1,9 @@
+.redactable::selection {
+    color: black;
+    background-color: black;
+}
+
+.redacted-text, .redacted-text * {
+    color: black;
+    background-color: black;
+}
